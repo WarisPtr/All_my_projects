@@ -85,7 +85,7 @@ span.swiper-pagination-bullet{
 }
 
 .review h1{
-  @apply text-[1.4rem] border-solid border-b-[2px] border-[beige] w-fit pb-2;
+  @apply text-[1.4rem] border-solid border-b-[0.2vw] border-[beige] w-fit pb-2;
 }
 .detail-review{
   @apply text-lg pr-10 pt-3 leading-[1.15]; 
@@ -140,7 +140,7 @@ span.swiper-pagination-bullet{
   }
 }
 .s1, .s2, .s3 {
-  @apply border-solid border-b-[2px] border-[beige] w-fit mb-6;
+  @apply border-solid border-b-[.2vw] border-[beige] w-fit mb-6;
 }
 .para{
   @apply text-lg pr-10 pt-3 leading-[1.15]; 
@@ -151,7 +151,7 @@ span.swiper-pagination-bullet{
   }
 }
 .star{
-  @apply w-[80px] rotate-[20deg] border-2 border-[var(--neon)] p-[10px] rounded-[50px] brightness-0 invert;
+  @apply w-[5.55rem] rotate-[20deg] border-[0.2vw] border-[var(--neon)] p-[0.8vw] rounded-[50px] brightness-0 invert;
   animation: star-pic 3s infinite linear;
   transition: .3s;
 }
