@@ -1,0 +1,74 @@
+.about-section-page{
+    @apply bg-[#111] text-white text-center;
+}
+.about-section-page > .section-template > .row{
+    @apply  grid grid-cols-2 w-[76%] mx-auto items-center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+}
+.overlay{
+    @apply 
+    absolute
+    w-[28vw]
+    h-[29vw]
+    bg-[#48cf808c]
+    rounded-[99%]
+    shadow-[0_0_20px_10px_#48cf808c]
+    filter
+    blur-[30px]
+    top-[13vw]
+    z-0
+    mx-auto;
+}
+.left{
+    position: absolute;
+    z-index: 2;
+    font-size: 13vw;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: .2vw beige !important;
+    text-transform: uppercase;
+    margin-left: -34%;
+}
+.right{
+    position: absolute;
+    z-index: 2;
+    font-size: 11rem;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: .2vw beige !important;
+    text-transform: uppercase;
+    margin-left: 63%;
+    bottom: 0;
+}
+.hello{
+    @apply text-[3rem] py-3 font-bold text-[beige] text-left;
+}
+.my-name{
+    @apply text-[2.2rem] py-4 pl-10 font-normal text-[beige] text-left;
+}
+.my-name::after{
+    content: 'asdasd';
+}
+.jobtype{
+    @apply text-[3rem] py-3 font-bold text-[beige] text-left;
+}
+.btn{
+    @apply bg-[#48cf80] text-[beige] rounded-[99px] px-9 py-4 mt-5 text-[1.3rem] transition duration-300;
+    box-shadow: 0 0px 10px #48cf80;
+}
+.btn:hover{
+    box-shadow: 0 0px 13px #48cf80;
+}
+.my-name::before {
+    content: '';
+    background: #47cb7e;
+    position: absolute;
+    width: 17%;
+    height: 0.2vw;
+    left: -12vw;
+    margin-top: 1vw;
+}

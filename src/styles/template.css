@@ -1,0 +1,9 @@
+.btn-404:hover{
+    box-shadow: 0 0px 13px #48cf80 !important;
+}
+.input-template{
+    @apply text-black w-[40%] rounded-md h-10 px-4;
+}
+.select-template{
+    @apply text-black w-auto rounded-md h-10 px-4;
+}

@@ -1,0 +1,12 @@
+.calculate-section{
+    @apply p-4 rounded-md w-[80%] m-auto bg-[#535353];
+}
+.keypad-row{
+    @apply pt-4;
+    .keypad-box{
+        @apply pb-4 gap-y-4;
+        .number-template{
+            @apply  bg-black rounded-lg text-xl w-[88%] m-auto h-14;
+        }
+    }
+}

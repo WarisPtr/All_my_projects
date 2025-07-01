@@ -1,0 +1,24 @@
+.projectCard-section{
+    @apply pt-10 pb-32 bg-[#111] pt-12 pb-12 px-6 text-center;
+}
+.des-project{
+    @apply text-base text-left text-[beige];
+}
+.project-card{
+    a{
+    @apply flex flex-col; 
+    }
+    img{
+        @apply h-[15vw] object-cover object-[center_0px] rounded-xl md:h-[15vw] sm:h-[15vw] xl:h-[10vw];
+    }
+    .title-project{
+        @apply text-2xl font-semibold pt-5 pb-3 text-left text-[beige];
+    }
+} 
+.button-add{
+    @apply bg-[#48cf80] text-[beige] ml-3 rounded-[99px] px-6 py-3 transition duration-300;
+    box-shadow: 0 0px 10px #48cf80;
+}
+.button-add:hover{
+  box-shadow: 0 0px 13px #48cf80;
+}

@@ -1,0 +1,19 @@
+.footer{
+    @apply bg-[#1E1B2E] text-white py-4 px-4 px-52 ;
+}
+.footer-row{
+    @apply flex flex-row justify-between items-center mx-auto;
+}
+.footer-container{
+    @apply flex space-x-4 mb-4 md:mb-0;
+}
+.footer-social{
+    @apply bg-[#48cf80] p-3 rounded-full hover:scale-110 transition;
+}
+.facebok,.instagram,.line{
+  @apply w-4 h-auto transition-all duration-300 hover:scale-110 ;
+  margin-bottom: 0 !important;
+}
+.copy-right{
+    @apply text-sm text-[#48cf80] ;
+}

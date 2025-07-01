@@ -1,0 +1,27 @@
+.currency-section{
+    @apply px-3;
+}
+.currency-row{
+    @apply grid grid-cols-3 items-center ;
+    grid-template-columns: 1fr auto 1fr;
+    .currency-col{
+        @apply flex gap-2 justify-center flex-col;
+    }
+    .currency-value.input-template,
+    .result.input-template{
+        @apply w-full ;
+    }
+    .swap{
+        @apply px-4 py-2 rounded-full bg-gray-200 text-[#111] opacity-100 font-semibold hover:bg-gray-300 transition;
+    }
+    .currency-col{
+        @apply px-4 gap-y-4;
+    }
+    select{
+        @apply cursor-pointer;
+        option{
+            @apply cursor-pointer;
+        }
+    }
+
+}

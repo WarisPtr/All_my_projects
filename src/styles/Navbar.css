@@ -1,0 +1,49 @@
+.header-wrapper{
+  @apply w-full z-30 relative flex justify-between px-52 py-5 bg-[#111] items-center;
+  flex-flow: row nowrap;
+}
+.header-nav{
+  @apply flex justify-end relative w-full mr-3;
+  flex-flow: row nowrap;
+}
+.nav-item{
+  @apply text-base mx-6 no-underline relative delay-75 py-1.5 text-[beige];
+}
+.nav-item:last-child{
+  @apply bg-[#48cf80] text-[beige] rounded-[99px] px-4 py-1.5 transition duration-300;
+  box-shadow: 0 0px 10px #48cf80;
+}
+.nav-item:last-child:hover{
+  box-shadow: 0 0px 13px #48cf80;
+}
+.nav-item:last-child::before{
+  display: none;
+}
+.nav-item::before {
+  @apply absolute w-0 h-0.5 bottom-0 left-1/2 bg-[#A6A6A6] transition-all duration-300;
+  content: "";
+}
+a:hover::before {
+  @apply w-full left-0;
+}
+
+a:has(.facebok),a:has(.line),a:has(.instagram){
+  box-shadow: 0 0px 12px #48cf80;
+}
+.nav-contact{
+  @apply  w-auto ;
+  display: -webkit-box;
+}
+.logo-img{
+  @apply w-9 h-9 mx-2 transition-all duration-300 ;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(3%) saturate(1442%) hue-rotate(348deg) brightness(105%) contrast(92%);
+}
+
+.logo{
+  @apply w-5/6;
+   > h1 {
+      @apply text-[#f5f5dc];
+      font-size: 1.55rem ;
+  }
+}
+

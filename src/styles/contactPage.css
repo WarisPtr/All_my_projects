@@ -1,0 +1,32 @@
+.contact-section-page{
+    @apply bg-[#111] bg-cover bg-no-repeat bg-center;
+}
+.contact-section-page > .row-template > .row{
+    @apply flex grid grid-cols-2 w-[76%] mx-auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+}
+.icon-row{
+    @apply flex  border-b border-[#575757] pb-7 items-center;   
+}
+.icon-row:last-child{
+    @apply border-none
+}
+.icon-box-img{
+    @apply w-[12.3%];
+}
+.icon-box-text{
+    @apply pl-[7%];
+    > p:nth-child(1){
+        @apply text-[2rem] font-medium text-[beige];
+    }
+    > p:nth-child(2){
+        @apply pt-3 font-light text-lg text-[beige];
+    }
+}
+.map iframe{
+    @apply sm:!h-[35vw] !h-[200px];
+}
