@@ -123,7 +123,7 @@ a:has(.facebok),a:has(.line),a:has(.instagram){
       @apply w-24;
     }
     .header-wrapper{
-      @apply px-10 py0;
+      @apply px-10 py-20;
     }
 
 }
