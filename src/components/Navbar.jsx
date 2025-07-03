@@ -11,7 +11,7 @@ const Mainmenu =()=>{
     bmMenu: {
       background: '#333',
       padding: '2.5em 1.5em 0',
-      fontSize: '1.7rem',
+      fontSize: '18px',
     },
     bmBurgerBars: {
       background: '#fff',
@@ -20,7 +20,7 @@ const Mainmenu =()=>{
       display: 'block',
       color: 'beige',
       textDecoration: 'none',
-      marginBottom: '2.3rem',
+      marginBottom: '20px',
     },
   };
   return(
