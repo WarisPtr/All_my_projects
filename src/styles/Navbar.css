@@ -88,7 +88,11 @@ a:has(.facebok),a:has(.line),a:has(.instagram){
     height: 77% !important;
     filter: brightness(0) invert(1);
 }
-
+@media only screen and (min-width: 1024px) {
+  div:has(>.bm-burger-button) {
+      display: none;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .header-wrapper{
     @apply px-10 py-5;
