@@ -48,8 +48,63 @@ a:has(.facebok),a:has(.line),a:has(.instagram){
 .logo-container{
   @apply flex w-[30%] items-center;
 }
+
+
+.bm-burger-button span{
+  @apply bg-white
+}
+.bm-burger-button .bm-burger-bars:nth-child(1) {
+    height: 3px !important;
+    width: 30px !important;
+    right: 20px !important;
+    left: unset !important;
+    top: 30% !important;
+    opacity: 1 !important;
+    border-radius: 10px !important;
+}
+.bm-burger-button .bm-burger-bars:nth-child(2) {
+    height: 3px !important;
+    width: 30px !important;
+    right: 20px !important;
+    left: unset !important;
+    top: 45% !important;
+    opacity: 1 !important;
+    border-radius: 10px !important;
+}
+.bm-burger-button .bm-burger-bars:nth-child(3) {
+    height: 3px !important;
+    width: 30px !important;
+    right: 20px !important;
+    left: unset !important;
+    top: 60% !important;
+    opacity: 1 !important;
+    border-radius: 10px !important;
+}
+.bm-cross-menu {
+    position: relative;
+    right: 10px;
+    top: 8px;
+    width: 77% !important;
+    height: 77% !important;
+    filter: brightness(0) invert(1);
+}
+
 @media only screen and (max-width: 1024px) {
   .header-wrapper{
-    @apply px-52 py-5;
+    @apply px-10 py-5;
+  }
+  .logo-container{
+    @apply w-[50%];
+  }
+  .logo-img{
+    @apply w-14;
+  }
+  nav.header-nav{
+    @apply hidden;
+  }
+  .logo{
+    > h1 {
+        @apply text-[2.5rem] leading-[0.7];
+    }
   }
 }

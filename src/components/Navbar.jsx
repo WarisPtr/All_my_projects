@@ -1,7 +1,28 @@
 import { Link } from "react-router-dom";
 import '../styles/Navbar.css'
+import { useState } from "react";
+import { slide as Menu } from 'react-burger-menu';
 
-const Menu =()=>{
+const Mainmenu =()=>{
+  const burgerStyles = {
+    bmMenuWrap: {
+      top: '0px', 
+    },
+    bmMenu: {
+      background: '#333',
+      padding: '2.5em 1.5em 0',
+      fontSize: '1.7rem',
+    },
+    bmBurgerBars: {
+      background: '#fff',
+    },
+    bmItem: {
+      display: 'block',
+      color: 'beige',
+      textDecoration: 'none',
+      marginBottom: '2.3rem',
+    },
+  };
   return(
     <header className="header-wrapper">
       <Link to="/" className="logo-container">
@@ -10,14 +31,20 @@ const Menu =()=>{
           <h1>MY LOGO</h1>
         </div>
       </Link>
+
       <nav className="header-nav">
         <Link className="nav-item" to="/">หน้าแรก</Link>
-        {/* <Link className="nav-item" to="/About">เกี่ยวกับเรา</Link> */}
         <Link className="nav-item" to="/myproject">โปรเจก</Link>
         <Link className="nav-item" to="/Contact">ติดต่อ</Link>
       </nav>
+
+      <Menu right styles={burgerStyles} customCrossIcon={<img src="./close.png" className="bm-cross-menu" />}>
+        <Link className="nav-item-mobile" to="/">หน้าแรก</Link>
+        <Link className="nav-item-mobile" to="/myproject">โปรเจก</Link>
+        <Link className="nav-item-mobile" to="/Contact">ติดต่อ</Link>
+    </Menu>
     </header>
   )
 }
 
-export default Menu
+export default Mainmenu
