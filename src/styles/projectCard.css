@@ -22,3 +22,20 @@
 .button-add:hover{
   box-shadow: 0 0px 13px #48cf80;
 }
+
+@media only screen and (max-width: 576px) {
+    .project-grid{
+        @apply w-[90%] gap-y-24
+    }
+    .project-card{
+        img {
+            height: 40vw;
+        }
+        .title-project {
+            @apply text-[3.2rem] pb-7 pt-12
+        }
+        .des-project{
+            @apply text-[2.5rem] leading-[1.3]
+        }
+    }
+}

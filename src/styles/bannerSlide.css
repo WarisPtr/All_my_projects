@@ -18,7 +18,7 @@
   .text-one{
     @apply font-medium text-[beige];
   }
-  p.text-two{
+  .text-two{
     @apply text-[#48cf80] pb-3;
   }
   p.text-three{
@@ -65,9 +65,9 @@
   to {width: 5%;}
 }
 span.swiper-pagination-bullet{
-  @apply md:h-[4px] sm:h-[2px] h-[2px];
+  @apply md:h-[4px] sm:h-[2px] h-[4px];
   background-color: #ececec !important;
-    width: 5%;
+  width: 5%;
   border-radius: 0 !important;
 }
 .slider-item-two{
@@ -207,3 +207,48 @@ span.swiper-pagination-bullet{
     position: relative;
 }
 
+
+@media only screen and (max-width: 576px) {
+  .slider-item-one{
+    @apply flex-col-reverse;
+    padding: 0 8%;
+      .item-column{
+        @apply w-full;
+      }
+      .item-column:nth-child(2)::before {
+        @apply mb-[-62vw] h-[76vw] w-[76vw];
+      }
+      .item-column:nth-child(1){
+        @apply pt-20;
+      }
+      .text-one{
+        @apply text-[3rem];
+      }
+      .name{
+        @apply text-[5rem] py-5;
+      }
+      p.text-two{
+        @apply text-[3rem] pb-5;
+      }
+      p.text-three{
+        @apply text-[2.5rem];
+      }
+      .btn{
+        @apply text-[3rem] px-[3.6rem] py-[2.5rem] mt-12; 
+      }
+      .achievement-row{
+       .num-banner1{
+          @apply text-[5rem]
+        }
+        .description-num{
+          @apply text-[2.8rem] leading-[1.2] mt-2;
+        }
+      } 
+  }
+  .swiper-initialized{
+      padding-bottom: 10vw !important;
+  }
+  span.swiper-pagination-bullet{
+    width: 9%;
+  }
+}

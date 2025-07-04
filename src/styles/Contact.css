@@ -8,7 +8,7 @@
     @apply text-[#48cf80] text-lg mb-10;
 }
 .contact-section-detail{
-    @apply grid  grid-cols-3 gap-6 max-w-4xl mx-auto;
+    @apply grid grid-cols-3 gap-6 max-w-4xl mx-auto;
 }
 .contact-box{
     @apply bg-[#1E1B2E] rounded-2xl p-6 shadow-md;
@@ -21,4 +21,28 @@
 }
 .contact-box-detail{
     @apply text-gray-400 mt-2;
+}
+
+@media only screen and (max-width: 576px) {
+    .contact-title{
+        @apply text-[5rem];
+    }
+    .contact-description{
+        @apply text-[2.5rem] py-7;
+    }
+    .contact-section-detail{
+        @apply max-w-[70%] grid-cols-1 ;
+        .contact-box-title{
+            @apply text-[3.2rem];
+        }
+        .contact-box-detail{
+            @apply text-[2.5rem];
+        }
+        .contact-img {
+            @apply h-[5rem];
+        }
+        .contact-box{
+            @apply h-[22rem] flex flex-col justify-center gap-y-4;
+        }
+    }
 }
