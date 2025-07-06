@@ -23,7 +23,7 @@ const SponsorMarquee = () => {
             {sponsors.map((name, index) => (
             <div
                 key={index}
-                className="mx-6 px-4 text-beige text-[1.5rem] font-medium overflow-hidden"
+                className="mx-6 px-4 text-beige sm:text-[1.5rem] text-[2.5rem] font-medium overflow-hidden"
             >
                 {name}
             </div>

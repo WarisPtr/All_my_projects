@@ -10,7 +10,7 @@ const MyProject =()=>{
                 <div className="row pt-14 relative">
                     <div className="col text-left">
                         <p className='hello'>Hello<span className='text-[#48cf80] pl-1'>.</span></p>
-                        <p className='my-name'>I'm Waris</p>
+                        <p className='my-name'>I'm Waris Petrod</p>
                         <p className='jobtype'>Frontend Developer</p>
                         <button className ="btn">Contact</button>
                     </div>

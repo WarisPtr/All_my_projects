@@ -50,14 +50,12 @@
 .my-name{
     @apply text-[2.2rem] py-4 pl-10 font-normal text-[beige] text-left;
 }
-.my-name::after{
-    content: 'asdasd';
-}
+
 .jobtype{
     @apply text-[3rem] py-3 font-bold text-[beige] text-left;
 }
 .btn{
-    @apply bg-[#48cf80] text-[beige] rounded-[99px] px-9 py-4 mt-5 text-[1.3rem] transition duration-300;
+    @apply bg-[#48cf80] text-[beige] rounded-[99px] px-9 py-4 mt-5 sm:text-[1.3rem] text-[2rem] transition duration-300;
     box-shadow: 0 0px 10px #48cf80;
 }
 .btn:hover{

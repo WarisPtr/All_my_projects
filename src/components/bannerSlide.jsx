@@ -70,20 +70,20 @@ const BannerSlide =()=>{
         <SwiperSlide className='slider-item-two'>
         <div className='item-column w-1/5 leftgrid'>
             <div className="review">
-                <h1><span className={indexslide == 1 ? 'text-animation':null}>Prolfile pictures</span></h1>
-                <p className='detail-review'><span className={indexslide == 1 ? 'text-animation':null}>Trusted by 500+ customer worldwide</span></p>
+                <h1><span className={indexslide == 1 ? 'text-animation':null}>Frontend Developer</span></h1>
+                <p className='detail-review'><span className={indexslide == 1 ? 'text-animation':null}>Building ideas with clean code</span></p>
             </div>
             <div className="stats">
                 <div className="s1">
-                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={500} duration={2} delay={0} />)}+</span></h1>
+                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={30} duration={2} delay={0} />)}+</span></h1>
                     <p><span className={indexslide == 1 ? 'text-animation':null}>Happy Client</span></p>
                 </div>
                 <div className="s2">
-                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={125} duration={2} delay={0} />)}+</span></h1>
+                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={35} duration={2} delay={0} />)}+</span></h1>
                     <p><span className={indexslide == 1 ? 'text-animation':null}>Projects Done</span></p>
                 </div>
                 <div className="s3">
-                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={450} duration={2} delay={0} />)}+</span></h1>
+                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={60} duration={2} delay={0} />)}+</span></h1>
                     <p><span className={indexslide == 1 ? 'text-animation':null}>Media Features</span></p>
                 </div>
             </div>
@@ -99,7 +99,21 @@ const BannerSlide =()=>{
                   onMouseEnter={() => setHover(true)}
                   onMouseLeave={() => setHover(false)}
             />
-            <p className="para"><span className={indexslide == 1 ? 'text-animation':null}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magnam dolores totam, doloremque nulla animi.</span></p>
+            <div className="stats-mobile">
+                <div className="s1">
+                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={30} duration={2} delay={0} />)}+</span></h1>
+                    <p><span className={indexslide == 1 ? 'text-animation':null}>Happy Client</span></p>
+                </div>
+                <div className="s2">
+                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={35} duration={2} delay={0} />)}+</span></h1>
+                    <p><span className={indexslide == 1 ? 'text-animation':null}>Projects Done</span></p>
+                </div>
+                <div className="s3">
+                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={60} duration={2} delay={0} />)}+</span></h1>
+                    <p><span className={indexslide == 1 ? 'text-animation':null}>Media Features</span></p>
+                </div>
+            </div>
+            <p className="para"><span className={indexslide == 1 ? 'text-animation':null}>Hi, I'm a Front-End Developer with experience in HTML, JavaScript, and CSS. I enjoy building clean, user-friendly interfaces and constantly learning new technologies.</span></p>
         </div>
         </SwiperSlide>
         </Swiper>

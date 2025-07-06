@@ -29,7 +29,7 @@
     }
     .project-card{
         img {
-            height: 40vw;
+            height: 37vw;
         }
         .title-project {
             @apply text-[3.2rem] pb-7 pt-12

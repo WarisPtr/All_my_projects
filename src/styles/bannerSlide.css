@@ -206,11 +206,13 @@ span.swiper-pagination-bullet{
     top: -4px;
     position: relative;
 }
-
+.stats-mobile,.detail-review-mobile{
+  display: none;
+}
 
 @media only screen and (max-width: 576px) {
   .slider-item-one{
-    @apply flex-col-reverse;
+    @apply flex-col-reverse !h-[168vw];
     padding: 0 8%;
       .item-column{
         @apply w-full;
@@ -225,7 +227,7 @@ span.swiper-pagination-bullet{
         @apply text-[3rem];
       }
       .name{
-        @apply text-[5rem] py-5;
+        @apply text-[5rem] py-5 h-[9vw];
       }
       p.text-two{
         @apply text-[3rem] pb-5;
@@ -250,5 +252,52 @@ span.swiper-pagination-bullet{
   }
   span.swiper-pagination-bullet{
     width: 9%;
+  }
+
+  .slider-item-two{
+    @apply flex-col !h-[168vw];
+    padding: 0 8%;
+    .leftgrid{
+      display: none;
+    } 
+    .para{
+      @apply text-[4rem] w-full pr-0 pt-10;
+    }
+    .item-column:nth-child(2){
+      @apply pt-[4rem];
+    }
+    .item-column{
+      @apply w-full;
+    }
+    .pic-profile{
+      @apply max-h-[99vw];
+    }
+    .topper,.base{
+      font-size: 15rem;
+    }
+    .mid-grid::before{
+      height: 65vw;
+      width: 65vw;
+      margin-top: 17vw;
+    }
+    .star {
+      position: absolute;
+      right: 7vw;
+      top: 7vw;
+      width: 13vw;
+      padding: 7px;
+    }
+    .s1, .s2, .s3{
+      @apply text-[4rem] pb-5 border-b-[.7vw];
+      h1{
+        padding-bottom: 5px;
+        font-size: 5.5rem;
+      }
+    }
+    .stats-mobile{
+      display: flex !important;
+      gap: 14px;
+      margin-top: -16vw;
+    }
   }
 }

@@ -11,9 +11,9 @@ const Contact =()=>{
                 <div className="row py-14">
                     <div className="col border-r border-gray-600 pr-[5%]">
                         <p className='text-[2.9rem] leading-[1.2] font-medium text-[beige]'>
-                            <span className='text-[#48cf80]'>At our firm,</span> <br/>
-                            team collaborates <br/>
-                            seamlessly to <span className='text-[#48cf80]'>achieve our </span>
+                            <span className='text-[#48cf80]'>I work efficiently </span> <br/>
+                            and collaborate smoothly <br/>
+                            with <span className='text-[#48cf80]'>   others.</span>
                         </p>
                     </div>
                     <div className="col px-[5%]">
