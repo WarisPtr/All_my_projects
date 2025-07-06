@@ -46,7 +46,7 @@ a:has(.facebok),a:has(.line),a:has(.instagram){
   }
 }
 .logo-container{
-  @apply flex w-[30%] items-center;
+  @apply flex w-[30%] items-center h-full;
 }
 
 
@@ -88,6 +88,14 @@ a:has(.facebok),a:has(.line),a:has(.instagram){
     height: 77% !important;
     filter: brightness(0) invert(1);
 }
+.bm-burger-button {
+    width: 66px;
+    position: absolute;
+    height: 66px;
+    top: 0;
+    right: 0;
+}
+
 @media only screen and (min-width: 1024px) {
   div:has(>.bm-burger-button) {
       display: none;
@@ -123,7 +131,7 @@ a:has(.facebok),a:has(.line),a:has(.instagram){
       @apply w-24;
     }
     .header-wrapper{
-      @apply px-10 py-20;
+      @apply px-10 py-0 h-[14.1vw];
     }
 
 }
