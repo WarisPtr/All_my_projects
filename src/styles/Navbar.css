@@ -124,14 +124,16 @@ a:has(.facebok),a:has(.line),a:has(.instagram){
 @media only screen and (max-width: 576px) {
     .logo{
       > h1 {
-          @apply text-[5rem] leading-[0.7];
+          @apply text-[7rem] leading-[0.7];
       }
     }
     .logo-img{
-      @apply w-24;
+      @apply w-36;
+      margin-right: 8px;
+      margin-top: -3px;
     }
     .header-wrapper{
-      @apply px-10 py-0 h-[14.1vw];
+      @apply px-10 py-0 h-[66px];
     }
 
 }
