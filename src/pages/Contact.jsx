@@ -6,17 +6,17 @@ const Contact =()=>{
             <div className="bg-[#12121c] block " style={{height: '1.3vw'}}></div>
             <div className="row-template">
                 <div className='w-[76%] mx-auto pt-16'>
-                    <p className='text-[1.15rem] border-b border-[#575757] pb-2 text-[beige]'>Contact</p>
+                    <p className='sm:text-[1.15rem] sm:pb-2 text-[6rem] pb-5 border-b border-[#575757]  text-[beige]'>Contact</p>
                 </div>
                 <div className="row py-14">
-                    <div className="col border-r border-gray-600 pr-[5%]">
-                        <p className='text-[2.9rem] leading-[1.2] font-medium text-[beige]'>
+                    <div className="col sm:border-r sm:border-b-0 border-b w-full border-gray-600 sm:pr-[5%] pr-0 pb-14">
+                        <p className='sm:text-[2.9rem] text-[5rem] leading-[1.2] font-medium text-[beige]'>
                             <span className='text-[#48cf80]'>I work efficiently </span> <br/>
                             and collaborate smoothly <br/>
                             with <span className='text-[#48cf80]'>   others.</span>
                         </p>
                     </div>
-                    <div className="col px-[5%]">
+                    <div className="col sm:px-[5%] px-[0] w-full">
                         <div className="icon-row">
                             <div className="icon-box-img">
                                 <img src='/โครงการใหม่-3-150x150.png'/>

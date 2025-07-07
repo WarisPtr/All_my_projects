@@ -2,7 +2,7 @@
     @apply bg-[#111] bg-cover bg-no-repeat bg-center;
 }
 .contact-section-page > .row-template > .row{
-    @apply flex grid grid-cols-2 w-[76%] mx-auto;
+    @apply flex sm:grid grid-cols-2 w-[76%] mx-auto;
     display: -webkit-box;
     display: -ms-flexbox;
     -webkit-box-orient: horizontal;
@@ -10,7 +10,7 @@
     flex-flow: row wrap;
 }
 .icon-row{
-    @apply flex  border-b border-[#575757] pb-7 items-center;   
+    @apply flex  border-b border-[#575757] sm:pb-7 py-10 items-center;   
 }
 .icon-row:last-child{
     @apply border-none
@@ -21,10 +21,10 @@
 .icon-box-text{
     @apply pl-[7%];
     > p:nth-child(1){
-        @apply text-[2rem] font-medium text-[beige];
+        @apply sm:text-[2rem] text-[5rem] font-medium text-[beige];
     }
     > p:nth-child(2){
-        @apply pt-3 font-light text-lg text-[beige];
+        @apply pt-3 font-light sm:text-lg text-[3rem] leading-[1.4] pt-6 text-[beige];
     }
 }
 .map iframe{

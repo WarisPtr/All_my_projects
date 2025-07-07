@@ -71,7 +71,7 @@ const BannerSlide =()=>{
         <div className='item-column w-1/5 leftgrid'>
             <div className="review">
                 <h1><span className={indexslide == 1 ? 'text-animation':null}>Frontend Developer</span></h1>
-                <p className='detail-review'><span className={indexslide == 1 ? 'text-animation':null}>Building ideas with clean code</span></p>
+                <p className='detail-review'><span className={indexslide == 1 ? 'text-animation':null}>Building ideas with clean code.</span></p>
             </div>
             <div className="stats">
                 <div className="s1">
@@ -93,7 +93,12 @@ const BannerSlide =()=>{
             <img src='/me2.png' className='relative pic-profile'/>
             <h1 className="topper">FRONTEND<br/>DEVELOPER</h1>
         </div>
+
         <div className='item-column w-1/5 rightgrid'>
+            <div className='para-two'>
+                <p className='title-banner-two'>Forntend Developer.</p>
+                <p className='description-banner-two'>Building ideas with clean code.</p>
+            </div>
             <img src='/star.webp' 
                   className={`star ${hover ? "hovered" : ""}`}
                   onMouseEnter={() => setHover(true)}

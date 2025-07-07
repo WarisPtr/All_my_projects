@@ -13,7 +13,7 @@ const sponsors = [
 
 const SponsorMarquee = () => {
   return (
-    <div className="bg-[#17232d] py-6 z-10 relative">
+    <div className="bg-[#17232d] sm:py-6 py-10 z-10 relative">
       <Marquee
         speed={50}
         gradient={false}
