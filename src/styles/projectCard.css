@@ -1,5 +1,5 @@
 .projectCard-section{
-    @apply pt-10 pb-32 bg-[#111] pt-12 pb-12 px-6 text-center;
+    @apply sm:py-12 py-32 bg-[#111] px-6 text-center;
 }
 .des-project{
     @apply text-base text-left text-[beige];

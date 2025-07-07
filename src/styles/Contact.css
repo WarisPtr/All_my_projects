@@ -1,5 +1,5 @@
 .contact-section{
-    @apply bg-[#111] text-white pt-16 pb-20 px-6 text-center;
+    @apply bg-[#111] text-white sm:pt-16 sm:pb-20 pt-28 pb-44 px-6 text-center;
 }
 .contact-title {
     @apply text-[2.8rem] font-semibold mb-2 text-[beige];
