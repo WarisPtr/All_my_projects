@@ -206,7 +206,7 @@ span.swiper-pagination-bullet{
     top: -4px;
     position: relative;
 }
-.stats-mobile,.detail-review-mobile{
+.stats-mobile,.detail-review-mobile,.para-two{
   display: none;
 }
 
@@ -312,7 +312,7 @@ span.swiper-pagination-bullet{
       margin-top: -17vw;
     }
     .para-two{
-      @apply pb-12;
+      @apply !block pb-12;
     }
     .description-banner-two{
       @apply text-[2.5rem] pb-4 leading-[1.15];
