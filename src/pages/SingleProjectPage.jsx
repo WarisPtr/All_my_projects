@@ -10,7 +10,7 @@ const SingleProject =()=>{
 
     return(
         <div className='single-project-page'>
-            <div className="bg-[#12121c] block " style={{height: '1.3vw'}}></div>
+            <div className="bg-[#12121c] block bg-space" style={{height: '1.3vw'}}></div>
             <div className="single-project-content">
                 <div className="row">
                     <h1 className="project-title">{project.title}</h1>

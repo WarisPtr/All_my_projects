@@ -24,6 +24,12 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .about-section-page .projectCard-section{
+        padding-top: 7%;
+    }
+    .bg-space{
+        height: 3.3vw !important;
+    }
     .project-grid{
         @apply w-[90%] gap-y-24
     }

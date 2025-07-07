@@ -6,7 +6,7 @@ const MyProject =()=>{
     return(
         <section className='about-section-page'>
             <section className="section-template">
-            <div className="bg-[#12121c] block " style={{height: '1.3vw'}}></div>
+            <div className="bg-[#12121c] block bg-space" style={{height: '1.3vw'}}></div>
                 <div className="row pt-14 relative">
                     <div className="col text-left">
                         <p className='hello'>Hello<span className='text-[#48cf80] pl-1'>.</span></p>
