@@ -10,7 +10,7 @@ function Project() {
   return (
     <section className="projectCard-section">
       <h2 className="contact-title py-10">Project</h2>
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:gap-10 md:gap-14 gap-32 w-[76%] mx-auto project-grid'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:gap-10 sm:gap-14 gap-32 w-[76%] mx-auto project-grid'>
         {listProject.map((project,index)=>(
           <div className='project-card' key={index}>
             <a href={`/singleproject/${project.id}`}>
