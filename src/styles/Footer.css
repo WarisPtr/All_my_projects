@@ -5,15 +5,15 @@
     @apply flex flex-row justify-between items-center mx-auto;
 }
 .footer-container{
-    @apply flex space-x-4 mb-4 md:mb-0 gap-4 xl:gap-0 sm:py-0 py-4;
+    @apply flex space-x-4 mb-4 sm:mb-0 gap-4 xl:gap-0 sm:py-0 py-4;
 }
 .footer-social{
-    @apply bg-[#48cf80] xl:p-3 md:p-3 p-7 rounded-full hover:scale-110 transition;
+    @apply bg-[#48cf80] xl:p-3 sm:p-3 p-7 rounded-full hover:scale-110 transition;
 }
 .facebok,.instagram,.line{
   @apply xl:w-4 sm:w-7 w-12 h-auto transition-all duration-300 hover:scale-110 ;
   margin-bottom: 0 !important;
 }
 .copy-right{
-    @apply text-[2.5rem] text-[#48cf80] xl:text-sm md:text-xl;
+    @apply text-[2.5rem] text-[#48cf80] xl:text-sm sm:text-xl;
 }
