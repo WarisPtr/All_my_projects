@@ -41,7 +41,7 @@
             @apply h-[4rem];
         }
         .contact-box{
-            @apply flex flex-col justify-center gap-y-4;
+            @apply flex flex-col justify-center gap-y-4 py-10;
         }
     }
 }
