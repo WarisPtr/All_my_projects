@@ -206,8 +206,59 @@ span.swiper-pagination-bullet{
     top: -4px;
     position: relative;
 }
+.swiper-wrapper{
+  @apply items-center;
+}
 .stats-mobile,.detail-review-mobile,.para-two{
   display: none;
+}
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+  .slider-item-one{
+      .name{
+        @apply text-[4.5rem] py-5 h-[9vw];
+      }
+      .text-one{
+        @apply text-[1.7rem];
+      }
+      p.text-two{
+        @apply text-[1.7rem] pb-5;
+      }
+      p.text-three{
+        @apply text-[1.4rem];
+      }
+      .btn{
+        @apply text-[1.4rem] px-[2rem] py-[1rem] mt-12; 
+      }
+      .achievement-row{
+       .num-banner1{
+          @apply text-[2.8rem]
+        }
+        .description-num{
+          @apply text-[1.3rem] leading-[1.2] mt-2;
+        }
+      } 
+  }
+  .slider-item-two{
+    .para{
+      @apply text-[1.4rem] w-full pr-0 pt-10;
+    }
+    .s1, .s2, .s3{
+      @apply text-[1.5rem]  border-b-[.3vw];
+      h1{
+        padding-bottom: 2px;
+        font-size: 2rem;
+      }
+    }
+    .stats > div > p{
+      @apply text-[1.4rem];
+    }
+    .review h1{
+      @apply text-[1.7rem];
+    }
+    .detail-review{
+      @apply text-[1.4rem];
+    }
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -251,7 +302,11 @@ span.swiper-pagination-bullet{
       padding-bottom: 10vw !important;
   }
   span.swiper-pagination-bullet{
-    width: 9%;
+    width:15%;
+  }
+  @keyframes load3 {
+    from {width: 0%;}
+    to {width: 15%;}
   }
 
   .slider-item-two{

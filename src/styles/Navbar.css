@@ -103,7 +103,10 @@ a:has(.facebok),a:has(.line),a:has(.instagram){
 }
 @media only screen and (max-width: 1024px) {
   .header-wrapper{
-    @apply px-10 py-5;
+    @apply px-10 py-0 h-[66px];
+  }
+  .slider-item-one{
+    @apply px-14 ;
   }
   .logo-container{
     @apply w-[50%];
@@ -116,8 +119,13 @@ a:has(.facebok),a:has(.line),a:has(.instagram){
   }
   .logo{
     > h1 {
-        @apply text-[2.5rem] leading-[0.7];
+        @apply text-[3.5rem] leading-[0.7];
     }
+  }
+  .logo-img{
+    @apply w-[5.4rem];
+    margin-right: 8px;
+    margin-top: -3px;
   }
 }
 
@@ -132,8 +140,4 @@ a:has(.facebok),a:has(.line),a:has(.instagram){
       margin-right: 8px;
       margin-top: -3px;
     }
-    .header-wrapper{
-      @apply px-10 py-0 h-[66px];
-    }
-
 }
