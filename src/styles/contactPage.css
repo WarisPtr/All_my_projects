@@ -8,6 +8,28 @@
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-flow: row wrap;
+
+    @media only screen and (min-width: 576px) and (max-width: 1024px) {
+        width: 90%;
+    }
+}
+.contact-text{
+    @apply w-[76%];
+
+    @media only screen and (min-width: 576px) and (max-width: 1024px) {
+        width: 90%;
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.4rem;
+        @media only screen and (min-width: 576px) and (max-width: 1024px) {
+            font-size: 2.6rem;
+        }
+        @media only screen and (max-width: 576px){
+            font-size: 3.6rem;
+        }
+    }
+    
 }
 .icon-row{
     @apply flex  border-b border-[#575757] sm:pb-7 py-10 items-center;   
@@ -24,7 +46,7 @@
         @apply sm:text-[2rem] text-[5rem] font-medium text-[beige];
     }
     > p:nth-child(2){
-        @apply pt-3 font-light sm:text-lg text-[3rem] leading-[1.4] pt-6 text-[beige];
+        @apply pt-3 font-light sm:text-lg text-[3rem] md:text-[1.4rem] md:pt-3 leading-[1.4] pt-6 text-[beige];
     }
 }
 .map iframe{

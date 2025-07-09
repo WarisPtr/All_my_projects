@@ -22,7 +22,29 @@
 .contact-box-detail{
     @apply text-gray-400 mt-2;
 }
-
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+    .contact-title{
+        @apply text-[4rem];
+    }
+    .contact-description{
+        @apply text-[1.4rem];
+    }
+    .contact-section-detail{
+        @apply max-w-[90%];
+        .contact-box-title{
+            @apply text-[2rem] mb-[-.8vw];
+        }
+        .contact-box-detail{
+            @apply text-[1.7rem];
+        }
+        .contact-img {
+            @apply h-[4rem];
+        }
+        .contact-box{
+            @apply flex flex-col justify-center gap-y-4;
+        }
+    }
+}
 @media only screen and (max-width: 576px) {
     .contact-title{
         @apply text-[5rem];
@@ -31,7 +53,7 @@
         @apply text-[2.5rem] py-7;
     }
     .contact-section-detail{
-        @apply max-w-[70%] grid-cols-1 ;
+        @apply max-w-[70%] grid-cols-1 gap-y-16;
         .contact-box-title{
             @apply text-[3.2rem];
         }

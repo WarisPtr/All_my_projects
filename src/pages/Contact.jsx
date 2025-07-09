@@ -5,8 +5,8 @@ const Contact =()=>{
         <section className='contact-section-page'>
             <div className="bg-[#12121c] block bg-space" style={{height: '1.3vw'}}></div>
             <div className="row-template py-14 sm:py-0">
-                <div className='w-[76%] mx-auto pt-16'>
-                    <p className='sm:text-[1.15rem] sm:pb-2 text-[6rem] pb-5 border-b border-[#575757]  text-[beige]'>Contact</p>
+                <div className='contact-text mx-auto pt-16'>
+                    <p className=' sm:pb-2 text-[6rem] pb-5 border-b border-[#575757] text-[beige]'>Contact</p>
                 </div>
                 <div className="row py-14">
                     <div className="col sm:border-r sm:border-b-0 border-b w-full border-gray-600 sm:pr-[5%] pr-0 pb-14">
