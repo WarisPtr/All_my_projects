@@ -1,11 +1,11 @@
 .footer{
-    @apply bg-[#1E1B2E] text-white py-4 px-16 xl:px-52 md:px-28 ;
+    @apply bg-[#1E1B2E] text-white py-4 px-16 xl:px-52 sm:px-28 ;
 }
 .footer-row{
     @apply flex flex-row justify-between items-center mx-auto;
 }
 .footer-container{
-    @apply flex space-x-4 mb-4 sm:mb-0 gap-4 xl:gap-0 sm:py-0 py-4;
+    @apply flex space-x-4 mb-4 sm:mb-0 gap-0 xl:gap-0 sm:py-0 py-4;
 }
 .footer-social{
     @apply bg-[#48cf80] xl:p-3 sm:p-3 p-7 rounded-full hover:scale-110 transition;
