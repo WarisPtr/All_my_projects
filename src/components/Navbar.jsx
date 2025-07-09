@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link,useLocation  } from "react-router-dom";
 import '../styles/Navbar.css'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { slide as Menu } from 'react-burger-menu';
 
 const Mainmenu =()=>{
+  const [isOpen,setIsOpen] = useState(false)
+  const location = useLocation()
   const burgerStyles = {
     bmMenuWrap: {
       top: '0px', 
@@ -23,6 +25,16 @@ const Mainmenu =()=>{
       marginBottom: '20px',
     },
   };
+
+  useEffect(()=>{
+    setIsOpen(false)
+  },[location])
+  
+  const handleStateChange =(state)=>{
+    setIsOpen(state.isOpen)
+  }
+
+  
   return(
     <header className="header-wrapper">
       <Link to="/" className="logo-container">
@@ -38,10 +50,10 @@ const Mainmenu =()=>{
         <Link className="nav-item" to="/Contact">ติดต่อ</Link>
       </nav>
 
-      <Menu right styles={burgerStyles} customCrossIcon={<img src="./close.png" className="bm-cross-menu" />}>
-        <Link className="nav-item-mobile" to="/">หน้าแรก</Link>
-        <Link className="nav-item-mobile" to="/myproject">โปรเจก</Link>
-        <Link className="nav-item-mobile" to="/Contact">ติดต่อ</Link>
+      <Menu right styles={burgerStyles} isOpen={isOpen} onStateChange={handleStateChange} customCrossIcon={<img src="./close.png" className="bm-cross-menu" />}>
+        <Link onClick={()=>setIsOpen(false)} className="nav-item-mobile" to="/">หน้าแรก</Link>
+        <Link onClick={()=>setIsOpen(false)} className="nav-item-mobile" to="/myproject">โปรเจก</Link>
+        <Link onClick={()=>setIsOpen(false)} className="nav-item-mobile" to="/Contact">ติดต่อ</Link>
     </Menu>
     </header>
   )
