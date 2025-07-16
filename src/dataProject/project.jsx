@@ -23,5 +23,11 @@ export const projects = [
         title : 'Counter App',
         description: 'แอปพลิเคชันนับตัวเลขอย่างง่าย',
         imageUrl: '/ProjectCoverImage/counter_app_with_stepper.png'
+    },
+    {
+        id : 5,
+        title : 'Weather App',
+        description: 'แอปตรวจสอบสภาพอากาศช่วยให้ง่ายต่อการเดินทาง',
+        imageUrl: '/ProjectCoverImage/counter_app_with_stepper.png'
     }
 ]
