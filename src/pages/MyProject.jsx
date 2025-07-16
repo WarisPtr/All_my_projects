@@ -4,7 +4,7 @@ import Project from '../components/projectCard'
 
 const MyProject =()=>{
     return(
-        <section className='about-section-page'>
+        <section className='about-section-page pb-10'>
             <section className="section-template">
             <div className="bg-[#12121c] block bg-space" style={{height: '1.3vw'}}></div>
                 <div className="row pt-14 relative">
