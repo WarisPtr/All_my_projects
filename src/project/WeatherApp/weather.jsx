@@ -9,8 +9,16 @@ export default function Weather (){
         Status:null,
         Icon:null
     })
+    const provinces = [
+        "กรุงเทพมหานคร", "กระบี่", "กาญจนบุรี", "กาฬสินธุ์", "กำแพงเพชร", "ขอนแก่น",
+        "จันทบุรี", "ฉะเชิงเทรา", "ชลบุรี", "ชัยนาท", "ชัยภูมิ", "ชุมพร", "เชียงราย",
+        "เชียงใหม่", "ตรัง", "ตราด", "ตาก", "นครนายก", "นครปฐม", "นครพนม", "นครราชสีมา",
+        "นครศรีธรรมราช", "นครสวรรค์", "นนทบุรี", "นราธิวาส", "น่าน", "บึงกาฬ", "บุรีรัมย์",
+        "ปทุมธานี", "ประจวบคีรีขันธ์", "ปราจีนบุรี", "ปัตตานี", "พระนครศรีอยุธยา", "พะเยา",
+        "พังงา", "พัทลุง", "พิจิตร", "พิษณุโลก", "เพชรบุรี", "เพชรบูรณ์", "แพร่", "ภูเก็ต"
+    ];    
     const iconUrl = `https://openweathermap.org/img/wn/${data.Icon}@2x.png`
-    console.log(iconUrl);
+    
     
     
 
@@ -51,7 +59,19 @@ export default function Weather (){
     
     return(
         <div>
-            <input placeholder="กรุณากรอกชื่อจังหวัด" type="text" className='input-template mb-0' value={weather} onChange={inputValue} style={{width:'80%'}} />
+            <select
+                value={weather}
+                onChange={inputValue}
+                className="input-template mb-5"
+                style={{ width: "80%" }}
+            >
+                <option value="">กรุณาเลือกจังหวัด</option>
+                {provinces.map((province, index) => (
+                <option key={index} value={province}>
+                    {province}
+                </option>
+                ))}
+            </select>
             <button type="button" onClick={fecthData} className='button-template'>Submit</button>
             <div className="result-box">
                 <img src={iconUrl} className="w-40 mx-auto " />
