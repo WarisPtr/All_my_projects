@@ -51,7 +51,7 @@ export default function Weather (){
     
     return(
         <div>
-            <input placeholder="กรุณากรอกชื่อจังหวัด" type="text" className='input-template mb-5' value={weather} onChange={inputValue} style={{width:'80%'}} />
+            <input placeholder="กรุณากรอกชื่อจังหวัด" type="text" className='input-template mb-0' value={weather} onChange={inputValue} style={{width:'80%'}} />
             <button type="button" onClick={fecthData} className='button-template'>Submit</button>
             <div className="result-box">
                 <img src={iconUrl} className="w-40 mx-auto " />

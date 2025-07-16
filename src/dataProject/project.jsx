@@ -28,6 +28,6 @@ export const projects = [
         id : 5,
         title : 'Weather App',
         description: 'แอปตรวจสอบสภาพอากาศช่วยให้ง่ายต่อการเดินทาง',
-        imageUrl: '/ProjectCoverImage/counter_app_with_stepper.png'
+        imageUrl: '/ProjectCoverImage/weatherapp.png'
     }
 ]
