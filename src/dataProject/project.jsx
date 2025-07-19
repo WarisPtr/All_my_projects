@@ -29,5 +29,11 @@ export const projects = [
         title : 'Weather App',
         description: 'แอปตรวจสอบสภาพอากาศช่วยให้ง่ายต่อการเดินทาง',
         imageUrl: '/ProjectCoverImage/weatherapp.png'
+    },
+    {
+        id : 6,
+        title : 'Markdown Editor',
+        description: 'โปรแกรมที่ใช้สำหรับเขียนและแก้ไขข้อความในรูปแบบ Markdown ซึ่งเป็นภาษามาร์กอัปแบบง่าย',
+        imageUrl: '/ProjectCoverImage/markdown.png'
     }
 ]

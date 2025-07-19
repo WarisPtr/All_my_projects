@@ -1,0 +1,40 @@
+.row-markdown{
+    @apply flex justify-center gap-10 w-[90%] m-auto;
+}
+.input_markdown{
+    @apply w-[50%] block;
+}
+.preview_markdown{
+    @apply w-[50%] block;
+}
+.input_editor{
+    @apply w-[100%] block bg-white h-56 text-black p-3 text-base;
+}
+.output_markdown{
+    @apply text-left leading-[1.4] bg-white p-3 h-56 overflow-auto;
+}
+.row-markdown {
+    color: black;
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        padding-inline-start: 40px;
+        unicode-bidi: isolate;
+    }
+    p {
+        display: block;
+        margin-block-start: 0;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+    }
+
+    a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

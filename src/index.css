@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,4 +30,9 @@ html,body{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+h1 { @apply text-2xl }
+h2 { @apply text-xl }
+h3,p { @apply text-lg }
+h4 { @apply text-base }
+h5 { @apply text-sm }
+h6 { @apply text-xs }
