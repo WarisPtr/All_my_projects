@@ -1,11 +1,14 @@
 import '../styles/MyProject.css'
 import SponsorMarquee from '../components/sponser'
 import Project from '../components/projectCard'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 const MyProject =()=>{
+
     return(
         <section className='about-section-page pb-10'>
-            <section className="section-template">
+            <section className="section-template">          
             <div className="bg-[#12121c] block bg-space" style={{height: '1.3vw'}}></div>
                 <div className="row pt-14 relative">
                     <div className="col text-left">
@@ -25,7 +28,22 @@ const MyProject =()=>{
             <section className='sponser'>
                 <SponsorMarquee/>
             </section>
-            <Project />
+            
+            <h2 className="contact-title pt-16 pb-10">Project</h2>
+        
+            <Tabs>
+                <TabList>
+                    <Tab >React</Tab>
+                    <Tab >Wordpress</Tab>
+                </TabList>
+
+                <TabPanel className='react-tab'>
+                    <Project category="React" />
+                </TabPanel>
+                <TabPanel className='wordpress-tab'>
+                    <Project category="Wordpress" />
+                </TabPanel>
+            </Tabs>
 
         </section>
     )

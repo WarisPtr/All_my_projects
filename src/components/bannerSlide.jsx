@@ -52,7 +52,7 @@ const BannerSlide =()=>{
                         <div className='w-1/3'></div>
                         <p className='w-1/3'>
                             <span className='text-[1.8rem] num-banner1'>{indexslide == 0 && (<CountUp start={0} end={3} duration={2} delay={0} />)}+</span>
-                            <span className='text-[.8rem] text-[#48cf80] description-num'>Years of Experience</span>
+                            <span className='text-[.8rem] xl:text-[1rem] xl:leading-[1.2] text-[#48cf80] description-num'>Years of Experience</span>
                         </p>
                         <div className='w-1/3'></div>
                     </div>
@@ -60,7 +60,7 @@ const BannerSlide =()=>{
                         <div className='w-1/3'></div>
                         <p className='w-1/3'>
                             <span className='text-[1.8rem] num-banner1'>{indexslide == 0 && (<CountUp start={0} end={30} duration={2} delay={0} />)}+</span>
-                            <span className='text-[.8rem] text-[#48cf80] description-num'>Frontend Projects</span>
+                            <span className='text-[.8rem] xl:text-[1rem] xl:leading-[1.2] text-[#48cf80] description-num'>Frontend Projects</span>
                         </p>
                         <div className='w-1/3'></div>
                     </div>
