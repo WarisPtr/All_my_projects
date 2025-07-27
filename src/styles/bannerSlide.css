@@ -3,7 +3,7 @@
   cursor: grab;
 }
 .swiper-initialized{
-  @apply md:!pb-[3vw] sm:!pb-[36px] !pb-[5.2vw]; 
+  @apply md:!pb-[3vw] sm:!pb-[36px] md:!pb-[5.2vw]; 
 }
 .slider-item-one{
   @apply items-center ;
@@ -42,7 +42,7 @@
     @apply flex justify-around;
   }
   .count-item{
-    @apply bg-[#121121] border-solid md:border-[2px] border-[1px] border-[#48cf80] w-[45%] py-4 rounded-[2vw];
+    @apply bg-[#121121] border-solid md:border-[2px] border-[1px] border-[#48cf80] w-[45%] py-[15px] xl:py-4 rounded-[2vw];
   }
   .count-item > p{
     @apply flex flex-col items-start w-3/6 gap-y-1;
@@ -215,7 +215,7 @@ span.swiper-pagination-bullet{
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   .slider-item-one{
       .name{
-        @apply text-[4.5rem] py-5 h-[9vw];
+        @apply text-[4.5rem] py-5 ;
       }
       .text-one{
         @apply text-[1.7rem];
@@ -234,7 +234,7 @@ span.swiper-pagination-bullet{
           @apply text-[2.8rem]
         }
         .description-num{
-          @apply text-[1.3rem] leading-[1.2] mt-2;
+          @apply text-[1.3rem] leading-[1.2] mt-3;
         }
       } 
   }
@@ -261,6 +261,7 @@ span.swiper-pagination-bullet{
   }
 }
 
+
 @media only screen and (max-width: 576px) {
   .slider-item-one{
     @apply flex-col-reverse !h-[168vw];
@@ -278,10 +279,10 @@ span.swiper-pagination-bullet{
         @apply text-[3rem];
       }
       .name{
-        @apply text-[5rem] py-5 h-[9vw];
+        @apply text-[6.5rem] py-0 leading-normal;
       }
       p.text-two{
-        @apply text-[3rem] pb-5;
+        @apply text-[3rem] pb-10;
       }
       p.text-three{
         @apply text-[2.5rem];
@@ -294,7 +295,7 @@ span.swiper-pagination-bullet{
           @apply text-[5rem]
         }
         .description-num{
-          @apply text-[2.8rem] leading-[1.2] mt-2;
+          @apply text-[2.8rem] leading-[1.2] mt-10;
         }
       } 
   }
