@@ -374,7 +374,7 @@ span.swiper-pagination-bullet{
       @apply !block pb-0;
     }
     .description-banner-two{
-      @apply text-[2.5rem] pb-4 leading-[1.15];
+      @apply text-[2.5rem] pb-[3px] leading-[1.15];
     }
   }
 }
