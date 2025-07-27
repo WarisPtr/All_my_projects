@@ -356,8 +356,9 @@ span.swiper-pagination-bullet{
       display: flex !important;
       gap: 10vw;
       width: 100%;
-      justify-content: flex-start;
+      justify-content: center;
       margin-bottom: 3vw;
+      margin-top: 4vw;
     }
     .para span.text-animation{
       animation: unset;
