@@ -89,6 +89,7 @@ const BannerSlide =()=>{
                 </div>
             </div>
         </div>
+
         <div className='item-column w-2/5 justify-items-center mid-grid pt-2 flex items-center justify-center'>
             <h1 className="base">FRONTEND<br/>DEVELOPER</h1>
             <img src='/me2.png' className='relative pic-profile'/>
@@ -96,6 +97,20 @@ const BannerSlide =()=>{
         </div>
 
         <div className='item-column w-1/5 rightgrid'>
+            <div className="stats-mobile">
+                <div className="s1">
+                    <h1 className='leading-[1.1]'><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={30} duration={2} delay={0} />)}+</span></h1>
+                    <p className='para'><span className={indexslide == 1 ? 'text-animation':null}>Happy Client</span></p>
+                </div>
+                <div className="s2">
+                    <h1 className='leading-[1.1]'><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={35} duration={2} delay={0} />)}+</span></h1>
+                    <p className='para'><span className={indexslide == 1 ? 'text-animation':null}>Projects Done</span></p>
+                </div>
+                <div className="s3">
+                    <h1 className='leading-[1.1]'><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={60} duration={2} delay={0} />)}+</span></h1>
+                    <p className='para'><span className={indexslide == 1 ? 'text-animation':null}>Media Features</span></p>
+                </div>
+            </div>
             <div className='para-two'>
                 <p className='title-banner-two'>Forntend Developer.</p>
                 <p className='description-banner-two'>Building ideas with clean code.</p>
@@ -105,20 +120,7 @@ const BannerSlide =()=>{
                   onMouseEnter={() => setHover(true)}
                   onMouseLeave={() => setHover(false)}
             />
-            <div className="stats-mobile">
-                <div className="s1">
-                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={30} duration={2} delay={0} />)}+</span></h1>
-                    <p><span className={indexslide == 1 ? 'text-animation':null}>Happy Client</span></p>
-                </div>
-                <div className="s2">
-                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={35} duration={2} delay={0} />)}+</span></h1>
-                    <p><span className={indexslide == 1 ? 'text-animation':null}>Projects Done</span></p>
-                </div>
-                <div className="s3">
-                    <h1><span className={indexslide == 1 ? 'text-animation':null}>{indexslide == 1 && (<CountUp start={0} end={60} duration={2} delay={0} />)}+</span></h1>
-                    <p><span className={indexslide == 1 ? 'text-animation':null}>Media Features</span></p>
-                </div>
-            </div>
+
             <p className="para"><span className={indexslide == 1 ? 'text-animation':null}>Hi, I'm a Front-End Developer with experience in HTML, JavaScript, and CSS. I enjoy building clean, user-friendly interfaces and constantly learning new technologies.</span></p>
         </div>
         </SwiperSlide>

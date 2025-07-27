@@ -17,7 +17,7 @@
     @apply h-[2rem] mb-4 mx-auto;
 }
 .contact-box-title{
-    @apply text-[1.25rem] font-semibold text-[beige];
+    @apply text-[1.25rem] font-semibold text-[beige] pb-2;
 }
 .contact-box-detail{
     @apply text-gray-400 ;
