@@ -3,6 +3,7 @@ import SponsorMarquee from '../components/sponser'
 import Project from '../components/projectCard'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { Link } from 'react-router-dom';
 
 const MyProject =()=>{
 
@@ -15,7 +16,7 @@ const MyProject =()=>{
                         <p className='hello'>Hello<span className='text-[#48cf80] pl-1'>.</span></p>
                         <p className='my-name'>I'm Waris Petrod</p>
                         <p className='jobtype'>Frontend Developer</p>
-                        <button className ="btn">Contact</button>
+                        <button className ="btn"><Link to="/Contact">Contact</Link></button>
                     </div>
                     <div className="col flex justify-center">
                         <img src="/me3.png" className='z-10 relative' />

@@ -27,7 +27,7 @@ a:hover::before {
   @apply w-full left-0;
 }
 
-a:has(.facebok),a:has(.line),a:has(.instagram){
+a:has(.github),a:has(.call),a:has(.envelopment){
   box-shadow: 0 0px 12px #48cf80;
 }
 .nav-contact{

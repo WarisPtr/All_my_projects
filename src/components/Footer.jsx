@@ -6,14 +6,14 @@ export default function Footer() {
       <div className="footer-row">
         {/* Social Icons */}
         <div className="footer-container">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="footer-social">
-            <img src="/facebook-app-symbol.png" alt="Facebook Logo" className="facebok"/>
+          <a href="https://github.com/WarisPtr" target="_blank" rel="noopener noreferrer" className="footer-social">
+            <img src="/github.png" alt="github" className="github"/>
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-social">
-                  <img src="/instagram.png" alt="instagram Logo" className="instagram"/>
+          <a href="mailto:hamwaris.ptr@gmail.com" target="_blank" rel="noopener noreferrer" className="footer-social">
+                  <img src="/envelopment.png" alt="envelopment Logo" className="envelopment"/>
           </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="footer-social">
-            <img src="/line.png" alt="line Logo" className="line"/>
+          <a href="tel:0946623792" target="_blank" rel="noopener noreferrer" className="footer-social">
+            <img src="/call.png" alt="call Logo" className="call"/>
           </a>
         </div>
         {/* Copyright */}

@@ -5,6 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useState } from 'react';
 import '../styles/bannerSlide.css'
+import { Link } from 'react-router-dom';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -43,7 +44,7 @@ const BannerSlide =()=>{
                 </div>
                 <p className='text-two'>I AM Frontend Developer</p>
                 <p className='text-three'>From Bangkok, Thailand. I'm a Frontend and WordPress developer with a strong passion for clean and responsive web design. I specialize in HTML, CSS, JavaScript, React, and WordPress. In my free time, I enjoy working out. I'm always eager to explore and learn new Frontend technologies to improve my skills even further.</p>
-                <button className='btn'>Contact</button>
+                <button className='btn'><Link to="/Contact">Contact</Link></button>
             </div>
             <div className='item-column'>
                 <img src='/me.png' className='z-10 relative'/>
