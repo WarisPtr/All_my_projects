@@ -354,10 +354,10 @@ span.swiper-pagination-bullet{
     }
     .stats-mobile{
       display: flex !important;
-      gap: 10vw;
       width: 100%;
       justify-content: center;
       margin-bottom: 3vw;
+      justify-content: space-between;
     }
     .para span.text-animation{
       animation: unset;
