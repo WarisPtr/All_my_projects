@@ -295,7 +295,7 @@ span.swiper-pagination-bullet{
           @apply text-[5rem]
         }
         .description-num{
-          @apply text-[2.8rem] leading-[1.2] mt-10;
+          @apply text-[2.8rem] leading-[1.2];
         }
       } 
   }
