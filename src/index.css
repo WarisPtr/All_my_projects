@@ -30,9 +30,9 @@ html,body{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-h1 { @apply text-2xl }
-h2 { @apply text-xl }
-h3,p { @apply text-lg }
+h1 { @apply text-3xl }
+h2 { @apply text-[1.5rem]  }
+h3,p { @apply text-[1.125rem] }
 h4 { @apply text-base }
 h5 { @apply text-sm }
 h6 { @apply text-xs }

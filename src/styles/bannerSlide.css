@@ -264,7 +264,7 @@ span.swiper-pagination-bullet{
 
 @media only screen and (max-width: 576px) {
   .slider-item-one{
-    @apply flex-col-reverse !h-[168vw];
+    @apply flex-col-reverse;
     padding: 0 8%;
       .item-column{
         @apply w-full;

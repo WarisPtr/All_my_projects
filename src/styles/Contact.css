@@ -17,10 +17,10 @@
     @apply h-[2rem] mb-4 mx-auto;
 }
 .contact-box-title{
-    @apply text-xl font-semibold text-[beige];
+    @apply text-[1.25rem] font-semibold text-[beige];
 }
 .contact-box-detail{
-    @apply text-gray-400 mt-2;
+    @apply text-gray-400 ;
 }
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
     .contact-title{

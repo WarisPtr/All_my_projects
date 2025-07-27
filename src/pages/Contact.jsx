@@ -32,7 +32,7 @@ const Contact =()=>{
                             </div>
                             <div className="icon-box-text ">
                                 <p>Phone</p>
-                                <p>+66 (0) 94 662 3792</p>
+                                <p><a href="tel:0946623792" target="_blank">+66 (0) 94 662 3792</a></p>
                             </div>
                         </div>
                         <div className="icon-row pt-7">
@@ -41,7 +41,7 @@ const Contact =()=>{
                             </div>
                             <div className="icon-box-text">
                                 <p>Email</p>
-                                <p>hamwaris.ptr@gmail.com</p>
+                                <p><a href="mailto:hamwaris.ptr@gmail.com" target="_blank">hamwaris.ptr@gmail.com</a></p>
                             </div>
                         </div>
                     </div>

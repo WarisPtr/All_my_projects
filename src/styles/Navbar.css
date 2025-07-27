@@ -132,7 +132,7 @@ a:has(.github),a:has(.call),a:has(.envelopment){
 @media only screen and (max-width: 576px) {
     .logo{
       > h1 {
-          @apply text-[7rem] leading-[0.7];
+          @apply text-[6rem] leading-[0.7];
       }
     }
     .logo-img{
