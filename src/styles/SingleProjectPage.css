@@ -1,5 +1,5 @@
 .single-project-page{
-    @apply bg-[#111] text-white text-center ;
+    @apply bg-[#111] text-white text-center h-[83%];
 }
 .single-project-content{
     @apply  flex items-center flex-col justify-start py-20 mx-auto  ;
@@ -9,4 +9,20 @@
 }
 .single-project-content > .row{
     @apply bg-[#262626] w-[60%] rounded-[1vw] py-8 px-8;
+}
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+    .single-project-page{
+        @apply h-[100%];
+    }
+    .single-project-content > .row{
+        @apply  w-[90%] ;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .single-project-page{
+        @apply h-[50%];
+    }
+    .single-project-content > .row{
+        @apply  w-[90%] ;
+    }
 }
