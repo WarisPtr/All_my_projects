@@ -18,4 +18,7 @@
     input.input-template{
         @apply text-[2.7rem] h-20 rounded-xl;
     }
+    label{
+        @apply text-[3rem]
+    }
 }
