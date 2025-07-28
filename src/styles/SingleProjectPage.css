@@ -20,7 +20,7 @@
 }
 @media only screen and (max-width: 576px) {
     .single-project-page{
-        @apply h-[85%];
+        @apply h-[84%];
     }
     .single-project-content > .row{
         @apply  w-[90%] ;
