@@ -79,6 +79,7 @@ li.react-tabs__tab{
     @apply text-[1.4rem] rounded-[99px] px-4 py-3 bg-[#48cf80] text-[beige] ml-[1%] opacity-75 ;
     box-shadow: 0 0px 12px #48cf80;
     transition: .3s;
+    border: none;
 }
 li.react-tabs__tab:hover{
     @apply opacity-100;
