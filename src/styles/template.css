@@ -14,3 +14,8 @@
 .button-template:hover{
   box-shadow: 0 0px 13px #48cf80;
 }
+@media only screen and (max-width: 1024px){
+    input.input-template{
+        @apply text-[2.7rem] h-20 rounded-xl;
+    }
+}

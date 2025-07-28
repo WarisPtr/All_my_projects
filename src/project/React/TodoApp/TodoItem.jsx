@@ -15,7 +15,7 @@ const TodoItem =({items,del,check,active})=>{
                 <div className="item-list" key={index}>
                     <input type="checkbox" onChange={()=>check(index)}/>
                     <label>{item.checked ? <s>{item.text}</s> : item.text}</label>
-                    <button type="button" className="del-item" onClick={()=>del(item)}>Delete</button>
+                    <button type="button" className="del-item button-template-single" onClick={()=>del(item)}>Delete</button>
                 </div>
             ))}
         </div>

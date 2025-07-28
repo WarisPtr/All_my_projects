@@ -173,28 +173,28 @@ export default function Calculate (){
             <input type="text" readOnly value={digit.display} className='calculate-value input-template' style={{width:'100%'}} />
             <div className='keypad-row'>
                 <div className='keypad-box grid grid-cols-4'>
-                    <button type='button' onClick={()=>addData(1)} className='number-template'>1</button>
-                    <button type='button' onClick={()=>addData(2)} className='number-template'>2</button>
-                    <button type='button' onClick={()=>addData(3)} className='number-template'>3</button>
-                    <button type='button' className='number-template' onClick={clearAll}>C</button>
-                    <button type='button' onClick={()=>addData(4)} className='number-template'>4</button>
-                    <button type='button' onClick={()=>addData(5)} className='number-template'>5</button>
-                    <button type='button' onClick={()=>addData(6)} className='number-template'>6</button>
+                    <button type='button' onClick={()=>addData(1)} className='number-template button-template-single'>1</button>
+                    <button type='button' onClick={()=>addData(2)} className='number-template button-template-single'>2</button>
+                    <button type='button' onClick={()=>addData(3)} className='number-template button-template-single'>3</button>
+                    <button type='button' className='number-template button-template-single' onClick={clearAll}>C</button>
+                    <button type='button' onClick={()=>addData(4)} className='number-template button-template-single'>4</button>
+                    <button type='button' onClick={()=>addData(5)} className='number-template button-template-single'>5</button>
+                    <button type='button' onClick={()=>addData(6)} className='number-template button-template-single'>6</button>
                     <div className=' grid grid-cols-2'>
-                        <button type='button' onClick={()=>operatorSetting('+')} className='number-template'>+</button>
-                        <button type='button' onClick={handleMinus} className='number-template'>-</button>
+                        <button type='button' onClick={()=>operatorSetting('+')} className='number-template button-template-single'>+</button>
+                        <button type='button' onClick={handleMinus} className='number-template button-template-single'>-</button>
                     </div>
-                    <button type='button' onClick={()=>addData(7)} className='number-template'>7</button>
-                    <button type='button' onClick={()=>addData(8)} className='number-template'>8</button>
-                    <button type='button' onClick={()=>addData(9)} className='number-template'>9</button>
+                    <button type='button' onClick={()=>addData(7)} className='number-template button-template-single'>7</button>
+                    <button type='button' onClick={()=>addData(8)} className='number-template button-template-single'>8</button>
+                    <button type='button' onClick={()=>addData(9)} className='number-template button-template-single'>9</button>
                     <div className=' grid grid-cols-2'>
-                        <button type='button' onClick={()=>operatorSetting('*')} className='number-template'>x</button>
-                        <button type='button' onClick={()=>operatorSetting('/')} className='number-template'>/</button>
+                        <button type='button' onClick={()=>operatorSetting('*')} className='number-template button-template-single'>x</button>
+                        <button type='button' onClick={()=>operatorSetting('/')} className='number-template button-template-single'>/</button>
                     </div>
                 </div>
                 <div className='keypad-box grid grid-cols-4'>
-                    <button type='button' onClick={()=>addData(0)} className='number-template col-span-3' style={{width:'96%'}}>0</button>
-                    <button type='button' className='number-template w-[94%]' onClick={calResult}   >=</button>
+                    <button type='button' onClick={()=>addData(0)} className='number-template col-span-3 button-template-single' style={{width:'96%'}}>0</button>
+                    <button type='button' className='number-template w-[94%] button-template-single' onClick={calResult}   >=</button>
                 </div>
             </div>
         </div>

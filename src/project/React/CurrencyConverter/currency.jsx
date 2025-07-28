@@ -59,7 +59,7 @@ const CurrencyConverter = () => {
                     </select>
                 </div>
                 <div className='currency-col'>
-                    <button className='swap' onClick={handleSwap}>Swap</button>
+                    <button className='swap button-template-single' onClick={handleSwap}>Swap</button>
                 </div>
                 <div className='currency-col'>
                     <select value={to} className='currency-result select-template'  onChange={(e)=>setTo(e.target.value)} >
@@ -72,7 +72,7 @@ const CurrencyConverter = () => {
                 </div>
             </div>
             <div className='currency-col px-4 py-4'>
-                <button onClick={currencyValue} className='text-xl h-14 w-full flex items-center justify-center bg-[#535353] rounded-xl my-4'>คำนวนผลลัพธ์</button>
+                <button onClick={currencyValue} className='button-template-single text-xl h-14 w-full flex items-center justify-center bg-[#535353] rounded-xl my-4'>คำนวนผลลัพธ์</button>
                 <p className='text-xl h-14 flex items-center justify-center rounded-xl'><span>Result : </span><span>&nbsp;{result}</span></p>
             </div>
         </div>

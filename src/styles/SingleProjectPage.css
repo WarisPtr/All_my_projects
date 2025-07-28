@@ -18,6 +18,14 @@
         @apply  w-[90%] ;
     }
 }
+@media only screen and (max-width: 1024px){
+    .project-title{
+        @apply text-[4rem] ;
+    }
+    .button-template-single{
+        @apply text-[3rem] !px-6 !py-5 ml-5;
+    }
+}
 @media only screen and (max-width: 576px) {
     .single-project-page{
         @apply h-[84%];
