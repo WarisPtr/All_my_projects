@@ -5,7 +5,7 @@
     @apply text-black w-[40%] rounded-md h-10 px-4;
 }
 .select-template{
-    @apply text-black w-auto rounded-md h-10 px-4;
+    @apply text-black w-auto rounded-md xl:h-10 h-20 text-[2.5rem] px-4;
 }
 .button-template{
     @apply bg-[#48cf80] text-[beige] ml-3 rounded-[99px] px-6 py-3 transition duration-300;
@@ -15,7 +15,7 @@
   box-shadow: 0 0px 13px #48cf80;
 }
 @media only screen and (max-width: 1024px){
-    input.input-template{
+    .input-template{
         @apply text-[2.7rem] h-20 rounded-xl;
     }
     label{

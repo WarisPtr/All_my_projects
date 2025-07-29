@@ -1,5 +1,5 @@
 .insertData{
-    @apply text-black w-[50%] rounded-md h-10 px-4;
+    @apply text-black w-[50%] rounded-xl xl:rounded-md xl:h-10 h-20 px-4;
 }
 .del-item{
     @apply bg-[#d82929] text-[beige] rounded-[99px] px-8 py-3 text-[1.05rem] transition duration-300;
@@ -9,11 +9,17 @@
     box-shadow: 0 0px 13px #d82929;
 }
 .item-list{
-    @apply flex items-center xl:gap-4 gap-8 justify-center mt-5 text-[beige] text-[1rem];
+    @apply flex items-center xl:gap-4 gap-8 justify-center mt-5 xl:mb-0 mb-10 text-[beige] text-[1rem];
 }
 .all.active,.done.active,.working.active{
     @apply px-4 py-2 rounded-full bg-gray-200 text-gray-800 opacity-100 font-semibold hover:bg-gray-300 transition;
 }
 .all,.done,.working{
     @apply px-4 py-2 rounded-full bg-gray-200 opacity-50 text-gray-800 font-semibold hover:bg-gray-300 transition;
+}
+
+@media only screen and (max-width: 1024px){
+    .button-add{
+        @apply ml-7;
+    }
 }

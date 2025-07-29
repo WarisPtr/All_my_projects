@@ -45,7 +45,7 @@ const CurrencyConverter = () => {
 
     return(
         <div className='currency-section'>
-            <div className='currency-col px-4 pb-4'>
+            <div className='currency-col px-4 xl:pb-4 pb-8'>
                 <input type="number" min={0} className='currency-value input-template' value={amount} onChange={amountValue}  placeholder='amount' style={{width:'100%'}} />
             </div>
             <div className='currency-row'>
@@ -71,9 +71,9 @@ const CurrencyConverter = () => {
                     </select>
                 </div>
             </div>
-            <div className='currency-col px-4 py-4'>
-                <button onClick={currencyValue} className='button-template-single text-xl h-14 w-full flex items-center justify-center bg-[#535353] rounded-xl my-4'>คำนวนผลลัพธ์</button>
-                <p className='text-xl h-14 flex items-center justify-center rounded-xl'><span>Result : </span><span>&nbsp;{result}</span></p>
+            <div className='currency-col px-4 xl:py-4 py-6'>
+                <button onClick={currencyValue} className='button-template-single text-xl xl:h-14 h-24 w-full flex items-center justify-center bg-[#535353] rounded-xl my-4'>คำนวนผลลัพธ์</button>
+                <p className='xl:text-xl text-[2.5rem] h-14 flex items-center justify-center rounded-xl'><span>Result : </span><span>&nbsp;{result}</span></p>
             </div>
         </div>
     )

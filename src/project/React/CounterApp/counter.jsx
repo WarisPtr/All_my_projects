@@ -23,10 +23,10 @@ export default function Counter(){
 
     return(
         <div className='counter-section'>
-            <input type="number" min={0} value={num} onChange={setValue} className='calculate-value input-template mb-5' style={{width:'100%'}} />
+            <input type="number" min={0} value={num} onChange={setValue} className='calculate-value input-template xl:mb-5 mb-7' style={{width:'100%'}} />
             <button type="button" className='button-add button-template-single' onClick={()=>dispatch({type:'+'})}>ADD</button>
             <button type="button" className='button-sub button-template-single' onClick={()=>dispatch({type:'-'})}>SUBTRACT</button>
-            <p className='result text-xl h-14 flex items-center justify-center rounded-xl'>{result}</p>
+            <p className='result xl:text-xl text-[2.5rem] h-14 flex items-center justify-center rounded-xl'>{result}</p>
         </div>
     )
 }

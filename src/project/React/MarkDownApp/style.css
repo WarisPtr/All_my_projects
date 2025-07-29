@@ -8,7 +8,7 @@
     @apply w-[50%] block;
 }
 .input_editor{
-    @apply w-[100%] block bg-white h-56 text-black p-3 text-base;
+    @apply w-[100%] block bg-white h-56 text-black p-3 xl:text-base text-[2rem];
 }
 .output_markdown{
     @apply text-left leading-[1.4] bg-white p-3 h-56 overflow-auto;
@@ -37,4 +37,92 @@
         cursor: pointer;
         text-decoration: underline;
     }
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+
+    code {
+        background-color: #f6f8fa;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+    }
+    pre {
+        background-color: #f6f8fa;
+        padding: 1em;
+        overflow-x: auto;
+        border-radius: 4px;
+    }
+
+    blockquote {
+        border-left: 4px solid #d0d7de;
+        padding-left: 1em;
+        color: #6a737d;
+        background-color: #f9f9f9;
+        margin: 1em 0;
+    }
+
+    ul, ol {
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1em;
+    }
+
+    th, td {
+        border: 1px solid #d0d7de;
+        padding: 0.5em;
+        text-align: left;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #d0d7de;
+        margin: 2em 0;
+    }
+        /* Responsive Design */
+    @media (max-width: 1024px) {
+        .row-markdown {
+            padding: 0.5rem;
+            font-size: 0.95em;
+        }
+        p{font-size: 2rem !important;}
+
+        h1 { font-size: 3rem !important; }
+        h2 { font-size: 2.5rem !important; }
+        h3 { font-size: 2rem !important; }
+
+        pre {
+            font-size: 2rem !important;
+        }
+
+        table {
+            font-size: 2rem !important;
+        }
+        ul,li {
+               font-size: 2rem !important;
+        }
+    }
+
+
 }
+@media (max-width: 1024px) {
+    textarea.input_editor{
+        line-height: 1.5 !important;
+    }
+}
+
+
+
+
+
+
+
+
+

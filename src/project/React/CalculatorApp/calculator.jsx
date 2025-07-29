@@ -172,7 +172,7 @@ export default function Calculate (){
         <div className='calculate-section'>
             <input type="text" readOnly value={digit.display} className='calculate-value input-template' style={{width:'100%'}} />
             <div className='keypad-row'>
-                <div className='keypad-box grid grid-cols-4'>
+                <div className='keypad-box grid grid-cols-4 xl:pt-0 pt-4'>
                     <button type='button' onClick={()=>addData(1)} className='number-template button-template-single'>1</button>
                     <button type='button' onClick={()=>addData(2)} className='number-template button-template-single'>2</button>
                     <button type='button' onClick={()=>addData(3)} className='number-template button-template-single'>3</button>

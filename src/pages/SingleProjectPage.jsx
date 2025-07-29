@@ -7,12 +7,14 @@ const SingleProject =()=>{
     const { id } = useParams();
     const project = projects.find( p => p.id === parseFloat(id))
     const ProjectComponent = projectComponentMap[project.id]
+    console.log(project);
+    
 
     return(
         <div className='single-project-page'>
             <div className="bg-[#12121c] block bg-space" style={{height: '1.3vw'}}></div>
             <div className="single-project-content">
-                <div className="row">
+                <div className={`row ${project.category}`}>
                     <h1 className="project-title">{project.title}</h1>
                     <ProjectComponent/>
                 </div>

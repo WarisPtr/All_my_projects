@@ -1,4 +1,5 @@
 import { Icon } from "lucide-react";
+import './style.css'
 import { useState,useEffect } from "react";
 
 export default function Weather (){
@@ -62,7 +63,7 @@ export default function Weather (){
             <select
                 value={weather}
                 onChange={inputValue}
-                className="input-template mb-5"
+                className="input-template"
                 style={{ width: "80%" }}
             >
                 <option value="">กรุณาเลือกจังหวัด</option>
@@ -72,7 +73,7 @@ export default function Weather (){
                 </option>
                 ))}
             </select>
-            <button type="button" onClick={fecthData} className='button-template'>Submit</button>
+            <button type="button" onClick={fecthData} className='button-template button-weather text-[2.5rem] xl:text-lg'>Submit</button>
             <div className="result-box">
                 <img src={iconUrl} className="w-40 mx-auto " />
                 <p className="text-[3.5rem] mt-[-1vw]">{data.Temp}°C</p>

@@ -37,7 +37,7 @@ const TodoList =()=>{
             <input type="text" className="insertData input-template" placeholder="กรอกข้อมูล" value={data} onChange={inputFunc} />
             <button type="button" className='button-add button-template-single' onClick={()=>addArr(arr)}>ADD</button>
             
-            <div className="flex gap-3 justify-center xl:my-5 my-10">
+            <div className="flex xl:gap-3 gap-5 justify-center xl:my-5 my-10">
                 <button className={`button-template-single ${activeTab === 'all' ? 'all active':'all'}`} onClick={()=>handleTabClick('all')}>All</button>
                 <button className={`button-template-single ${activeTab === 'done' ? 'done active':'done'}`} onClick={()=>handleTabClick('done')}>Done</button>
                 <button className={`button-template-single ${activeTab === 'working' ? 'working active':'working'}`}  onClick={()=>handleTabClick('working')}>Working</button>

@@ -2,7 +2,7 @@
     @apply p-4 rounded-md w-[80%] m-auto ;
 }
 .button-sub{
-    @apply bg-[#ff2929] text-[beige] ml-3 rounded-[99px] px-6 py-3 transition duration-300;
+    @apply bg-[#ff2929] text-[beige] xl:ml-3 xl:mb-0 ml-8 mb-5 rounded-[99px] px-6 py-3 transition duration-300;
     box-shadow: 0 0px 10px #ff2929;
 }
 .button-sub:hover{

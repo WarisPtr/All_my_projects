@@ -1,0 +1,5 @@
+@media only screen and (max-width: 1024px){
+    .button-weather{
+        @apply !py-6 !px-6 !ml-6
+    }
+}
