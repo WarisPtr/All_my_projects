@@ -41,6 +41,12 @@
             @apply text-[1.4rem] leading-[1.3]
         }
     }
+    .wordpress-tab .project-card img{
+        height: 24vw !important;
+    }
+    div.single-project-page:has(.Wordpress) {
+        height: 85% !important;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -64,6 +70,17 @@
             @apply text-[2.5rem] leading-[1.3]
         }
     }
+    .wordpress-tab .project-card img{
+        height: 50vw !important;
+        border-radius: 6px !important;
+    }
+    .paginatoin-project {
+        font-size: 3rem !important;
+        gap: 2.8rem !important;
+    }
+    div.single-project-page:has(.Wordpress) {
+        height: 85% !important;
+    }
 }
 
 /* pagination */
@@ -72,4 +89,10 @@
 }
 button.total-number.is-selected{
     color: #48cf80;
+}
+@media only screen and (max-width: 1024px) {
+    .paginatoin-project{
+        font-size: 2rem;
+        gap: 1.5rem;
+    }
 }
