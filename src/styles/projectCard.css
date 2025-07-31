@@ -45,7 +45,7 @@
         height: 24vw !important;
     }
     div.single-project-page:has(.Wordpress) {
-        height: inherit !important;
+        height: 85% !important;
     }
 }
 
@@ -94,5 +94,10 @@ button.total-number.is-selected{
     .paginatoin-project{
         font-size: 2rem;
         gap: 1.5rem;
+    }
+}
+@media only screen and (max-height: 850px) {
+    div.single-project-page:has(.Wordpress) {
+        height: auto !important;
     }
 }
