@@ -13,8 +13,11 @@
 .single-project-page:has(.Wordpress){
     @apply !h-[85%];
 }
-.single-project-page:has(.Wordpress .relative.group:nth-child(6)){
-    @apply !h-[auto];
+
+@media only screen and (min-width: 1024px){
+    .single-project-page:has(.Wordpress .relative.group:nth-child(6)){
+        @apply !h-[auto];
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
     .single-project-page{
