@@ -96,3 +96,8 @@ button.total-number.is-selected{
         gap: 1.5rem;
     }
 }
+@media only screen and (max-height: 390px) {
+    div.single-project-page:has(.Wordpress) {
+        height: auto !important;
+    }
+}
