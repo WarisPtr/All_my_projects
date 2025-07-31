@@ -44,7 +44,9 @@
     .wordpress-tab .project-card img{
         height: 24vw !important;
     }
-
+    div.single-project-page:has(.Wordpress) {
+        height: 95% !important;
+    }
 }
 
 @media only screen and (max-width: 576px) {
