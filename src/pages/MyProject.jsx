@@ -9,7 +9,7 @@ const MyProject =()=>{
 
     return(
         <section className='about-section-page pb-10'>
-            <section className="section-template">          
+            <section className="section-template" style={{overflow:'hidden'}}>          
             <div className="bg-[#12121c] block bg-space" style={{height: '1.3vw'}}></div>
                 <div className="row pt-14 relative">
                     <div className="col text-left">
