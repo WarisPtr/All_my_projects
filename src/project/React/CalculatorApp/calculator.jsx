@@ -165,7 +165,6 @@ export default function Calculate (){
         })
     }
 
-    console.log(digit);
     
 
     return(

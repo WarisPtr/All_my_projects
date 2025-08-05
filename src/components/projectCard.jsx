@@ -17,7 +17,6 @@ export default function Project({category}) {
 
   const listProject = isHomepage ? filteredProjects.slice(0,3) : filteredProjects.slice(startIndex,endIndex)
   
-  // console.log(startIndex,endIndex);
   
 
   const nextPage =()=>{
@@ -52,7 +51,6 @@ export default function Project({category}) {
     }
   }
 
-console.log('condition:', filteredProjects.length === 6 && isHomepage);
 
   const numPag = Math.ceil(filteredProjects.length/6)
 

@@ -34,7 +34,6 @@ export default function Weather (){
         try{
             const fetchWeather = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=th&units=metric`)
             const jsondata = await fetchWeather.json()
-            console.log(jsondata);
 
             if(jsondata.cod === 200){
                 setData({

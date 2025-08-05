@@ -7,7 +7,6 @@ const SingleProject =()=>{
     const { id } = useParams();
     const project = projects.find( p => p.id === parseFloat(id))
     const ProjectComponent = projectComponentMap[project.id]
-    console.log(project);
     
 
     return(
