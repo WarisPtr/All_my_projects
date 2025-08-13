@@ -19,7 +19,7 @@ const MyProject =()=>{
                         <button className ="btn"><Link to="/Contact">Contact</Link></button>
                     </div>
                     <div className="col flex justify-center">
-                        <img src="/me3.png" className='z-10 relative' />
+                        <img src="/me3.png" className='z-10 relative xl:w-[84%]' />
                         <p className='left'> &lt; </p>
                         <p className='right'> /&gt; </p>
                         <div className='overlay'></div>
